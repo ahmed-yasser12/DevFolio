@@ -1,0 +1,353 @@
+:root
+{
+    --maincolor:#007aff;
+}
+body
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+/* start nav */
+
+.dropdown-menu
+{
+    background-color: #007aff !important;
+}
+li:hover .dropdown-item
+{
+    background-color: transparent !important;
+}
+.dropdown-item
+{
+    padding: 0px !important;
+}
+
+li a
+{
+    font-size: 20px;
+    transition:border-bottom 0.2s;
+    color: white !important;
+    position: relative;
+}
+.nav 
+{
+    background-color: transparent;
+}
+.navbar 
+{
+    transition: backgroundColor 0.3s ;
+}
+.nav-item a::after
+{
+    content: "";
+    position: absolute;
+    background-color: white;
+    width: 10px;
+    height: 2px;
+    bottom: 0;
+    left: 10px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.nav-item:hover a::after
+{
+    width: 40px;
+    opacity: 1;
+}
+
+
+
+/* end navbar */
+
+/* start home */
+header
+{
+    background-image: url(../imges/hero-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+
+}
+.layer-home
+{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+/* end home */
+
+/* start about */
+
+.about-me h3::after
+{
+    content: "";
+    width: 80px;
+    height: 5px;
+    background-color: var(--maincolor);
+    position: absolute;
+    top: 40px;
+    left: 0;
+
+}
+.skills .progress
+{
+    height: 10px !important;
+}
+/* end about */
+
+/* start services */
+.line::after
+{
+    content: "";
+    background-color: var(--maincolor);
+    width: 60px;
+    height: 3px;
+    position: absolute;
+    top: 40px;
+    left: 48%;
+
+}
+@media screen and (max-width:600px) {
+    .line::after
+    {
+    content: "";
+    background-color: var(--maincolor);
+    width: 80px;
+    height: 3px;
+    position: absolute;
+    top: 60px;
+    left: 40%;
+    }
+    
+}
+@media screen and (min-width:600px) and (max-width:992px) {
+    .line::after
+    {
+        content: "";
+    background-color: var(--maincolor);
+    width: 80px;
+    height: 3px;
+    position: absolute;
+    top: 70px;
+    left: 44%;
+    }
+    
+}
+
+#services
+{
+    background-color:#f5f5f5;
+}
+
+.items
+{
+    border-radius: 15px;
+}
+.items i
+{
+    border-radius: 50%;
+    color: black;
+    margin-bottom: 20px;
+    border: 10px solid var(--maincolor);
+    transition: all 0.4s;
+}
+.items:hover i
+{
+    background-color: var(--maincolor);
+    color: white;
+    border-color: rgba(142, 177, 214, 0.453);
+}
+
+/* end services */
+.work-img
+{
+    background-image: url(../imges/counters-bg.jpg);
+    background-position: center center ;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    padding: 8rem 0rem;
+}
+
+.work-items i
+{
+    border-radius: 50%;
+    border: 10px solid white;
+ 
+}
+
+.overlayer1
+{
+    position: absolute;
+    top: 0;
+    left: 0px;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    background-color: rgb(0, 120, 255);
+}
+/* start work */
+
+.color
+{
+    color: var(--maincolor);
+}
+
+.port-img .port-icon i
+{
+    border:3px solid var(--maincolor) ;
+}
+#work
+{
+    background-color: #f5f5f5;
+}
+.port-img .card-img
+{
+    overflow: hidden;
+}
+.port-img img
+{
+    transition: transform 0.4s;
+}
+.port-img img:hover
+{
+    transform: scale(1.4);
+    cursor: pointer;
+}
+
+/* end work */
+/* start carousel */
+.overlay
+{
+    background-image: url(../imges/overlay-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 8rem 0rem;
+}
+.overlayer2
+{
+    position: absolute;
+    top: 0;
+    left: 0px;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    background-color: rgb(0, 120, 255);
+}
+.carousel-indicators
+{
+    top: 100%;
+
+}
+.carousel-indicators [data-bs-target]
+{
+    width: 10px ;
+    height: 10px;
+    border-radius: 50%;
+}
+/* end carousel */
+
+/* start blog */
+#blog
+{
+    background-color: #f5f5f5;
+}
+.right img
+{
+    width: 40px;
+}
+.title
+{
+    background-color: var(--maincolor);
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 2px;
+    border-radius: 3px;
+}
+@media screen and (max-width:500px) 
+{
+    .title
+{
+    top: 50%;
+}
+}
+
+.bg-gary
+{
+    background-color: #f5f5f5;
+}
+.color-icon
+{
+    color: #4e4e4e;
+}
+
+
+/* end blog */
+
+
+/* start contact */
+#contact h4::after
+{
+    content: "";
+    background-color: var(--maincolor);
+    width: 70px;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#contact
+{
+    background-image: url(../imges/overlay-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#contact .bg-blue
+{
+    background-color: rgba(0, 120,255, 0.6);
+    
+}
+.contact-box ul li i
+{
+    color: var(--maincolor);
+}
+.contact-box .icons i
+{
+    border-radius: 50%;
+    border: 2px solid var(--maincolor);
+    transition: all 0.4s;
+}
+.contact-box .icons i:hover
+{
+    background-color: var(--maincolor);
+    cursor: pointer;
+    color: white;
+} 
+/* end contact */
+
+/* start footer */
+footer
+{
+    background-color: rgba(0, 100, 255,0.9);
+}
+footer p a
+{
+    text-decoration: none;
+    color: white;
+}
+/* end footer */
+
+
+
+
+
+
+
+
+
+
